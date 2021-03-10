@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name     SDG Enhancements
-// @version  1
-// @match    http://*.?superdupergames.org/*
+// @version  1.1
+// @match    http://superdupergames.org/*
 // ==/UserScript==
 
 // Add Telegram link to main menu
