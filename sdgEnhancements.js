@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name     SDG Enhancements
-// @version  1.1
+// @version  1.2
 // @match    http://superdupergames.org/*
 // ==/UserScript==
 
