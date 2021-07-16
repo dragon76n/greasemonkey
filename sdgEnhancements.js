@@ -14,14 +14,14 @@ myMenuP.append(' | ');
 myMenuP.appendChild(myNewA);
 
 // Float Homeworlds form and stash near starmap
-if(window.location.search.indexOf('page=play_homeworlds') !== -1) { 
+if(window.location.search.indexOf('page=play_homeworlds') !== -1) {
   var myForm = document.querySelector('form');
   var myNewP = document.createElement('p');
   myNewP.innerText = 'Is this in your way? You\'re in luck! This box is draggable!';
   myNewP.setAttribute('style', 'text-align:center; font-style:italic;');
   var myImg = document.querySelector('table table table img');
   myImg.setAttribute('style', "max-width:100%");
-  myForm.setAttribute('style',"position:fixed; width:400px; left:10%; background-color: #c0c0c0; border: 3px groove; cursor: grab; padding: 10px;");
+  myForm.setAttribute('style',"position:fixed; width:400px; left:10%; background-color: #c0c0c0; border: 3px groove; cursor:grab; padding: 10px;");
   //myNewP.setAttribute('style',"position:absolute; right:0;");
   myForm.appendChild(myNewP);
   myNewP.appendChild(myImg);
@@ -49,9 +49,7 @@ function dragElement(elmnt) {
     document.onmouseup = closeDragElement;
     // call a function whenever the cursor moves:
     document.onmousemove = elementDrag;
-    
-    elementDrag.style.backgroundColor = 'blue';
-    elementDrag.style.cursor = 'move'; // You can do this or use a css class to change the cursor
+    elmnt.style.cursor = 'move'; // You can do this or use a css class to change the cursor
     return true;
   }
 
@@ -72,5 +70,6 @@ function dragElement(elmnt) {
     // stop moving when mouse button is released:
     document.onmouseup = null;
     document.onmousemove = null;
+    elmnt.style.cursor = 'grab'; // You can do this or use a css class to change the cursor
   }
 }
