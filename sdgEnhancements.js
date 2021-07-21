@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name     SDG Enhancements
-// @version  1.2
+// @version  1.3
 // @match    http://superdupergames.org/*
 // ==/UserScript==
 
@@ -71,5 +71,6 @@ function dragElement(elmnt) {
     document.onmouseup = null;
     document.onmousemove = null;
     elmnt.style.cursor = 'grab'; // You can do this or use a css class to change the cursor
+    elmnt.getElementsByTagName('textarea')[0].focus(); // Fix focus after moving
   }
 }
