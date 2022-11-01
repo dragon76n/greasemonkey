@@ -1,7 +1,9 @@
 // ==UserScript==
-// @name     SDG Enhancements
-// @version  1.3
-// @match    http://superdupergames.org/*
+// @name           SDG Enhancements
+// @description    Enhancements for the SuperDuperGames site - Float Homeworlds form and stash near starmap and make it draggable. Also add Telegram link to main menu.
+// @author         nathaniel@dragonshobbies.com
+// @version        1.3.1
+// @match          http://superdupergames.org/*
 // ==/UserScript==
 
 // Add Telegram link to main menu
